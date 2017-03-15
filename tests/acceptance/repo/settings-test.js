@@ -217,7 +217,7 @@ test('delete and create environment variables', function (assert) {
       name: 'drafted',
       value: 'true',
       public: true,
-      repository_id: this.repository.id
+      repository: this.repository
     } });
 
     // This will trigger a client-side error

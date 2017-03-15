@@ -11,8 +11,8 @@ test('visiting job-view', function (assert) {
   server.create('branch', {});
 
   let commit = server.create('commit', { author_email: 'mrt@travis-ci.org', author_name: 'Mr T', committer_email: 'mrt@travis-ci.org', committer_name: 'Mr T', branch: 'acceptance-tests', message: 'This is a message', branch_is_default: true });
-  let build = server.create('build', { repository_id: repo.id, state: 'passed', commit_id: commit.id, commit });
-  let job = server.create('job', { number: '1234.1', repository_id: repo.id, state: 'passed', build_id: build.id, commit, build });
+  let build = server.create('build', { repository: repo, state: 'passed', commit });
+  let job = server.create('job', { number: '1234.1', repository: repo, state: 'passed', build, commit });
   commit.job = job;
 
   job.save();
@@ -40,8 +40,8 @@ test('visiting a job with a truncated log', function (assert) {
   server.create('branch', {});
 
   let commit = server.create('commit', { author_email: 'mrt@travis-ci.org', author_name: 'Mr T', committer_email: 'mrt@travis-ci.org', committer_name: 'Mr T', branch: 'acceptance-tests', message: 'This is a message', branch_is_default: true });
-  let build = server.create('build', { repository_id: repo.id, state: 'passed', commit_id: commit.id, commit });
-  let job = server.create('job', { number: '1234.1', repository_id: repo.id, state: 'passed', build_id: build.id, commit, build });
+  let build = server.create('build', { repository: repo, state: 'passed', commit });
+  let job = server.create('job', { number: '1234.1', repository: repo, state: 'passed', commit, build });
   commit.job = job;
 
   job.save();
@@ -66,8 +66,8 @@ test('visiting a job with a complex log', function (assert) {
   server.create('branch', {});
 
   let commit = server.create('commit', { author_email: 'mrt@travis-ci.org', author_name: 'Mr T', committer_email: 'mrt@travis-ci.org', committer_name: 'Mr T', branch: 'acceptance-tests', message: 'This is a message', branch_is_default: true });
-  let build = server.create('build', { repository_id: repo.id, state: 'passed', commit_id: commit.id, commit });
-  let job = server.create('job', { number: '1234.1', repository_id: repo.id, state: 'passed', build_id: build.id, commit, build });
+  let build = server.create('build', { repository: repo, state: 'passed', commit });
+  let job = server.create('job', { number: '1234.1', repository: repo.id, state: 'passed', commit, build });
   commit.job = job;
 
   job.save();

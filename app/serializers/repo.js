@@ -14,6 +14,13 @@ var Serializer = V2FallbackSerializer.extend(EmbeddedRecordsMixin, {
     }
 
     return this._super(store, primaryModelClass, payload, id, requestType);
+  },
+
+  normalize(_modelClass, resourceHash) {
+    if (resourceHash['@type'] === 'repository') {
+      resourceHash['@type'] = 'repo';
+    }
+    return this._super(...arguments);
   }
 });
 

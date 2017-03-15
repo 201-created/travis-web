@@ -4,5 +4,5 @@ export default Model.extend({
   repository: belongsTo('repository'),
   commit: belongsTo('commit'),
   jobs: hasMany('job'),
-  branches: hasMany('branch', { inverseOf: 'branch' })
+  branch: belongsTo('branch', { inverseOf: 'lastBuild' }),
 });

@@ -34,7 +34,7 @@ export default JSONSerializer.extend({
 
     let relationshipHash = this._super(...arguments);
     if (relationshipHash && relationshipHash['@type']) {
-      relationshipHash.type = relationshipHash['@type'];
+      relationshipHash.type = relationshipHash['@type'] === 'repository' ? 'repo' : relationshipHash['@type'];
     } else if (relationshipHash && !relationshipHash.type) {
       relationshipHash.type = type;
     }
@@ -42,7 +42,9 @@ export default JSONSerializer.extend({
   },
 
   keyForRelationship(key/* , typeClass, method*/) {
-    if (key && key.underscore) {
+    if (key === 'repo') {
+      return 'repository';
+    } else if (key && key.underscore) {
       return key.underscore();
     } else {
       return key;
@@ -114,7 +116,7 @@ export default JSONSerializer.extend({
           if (data['@representation'] !== 'standard') {
             return;
           }
-          let type = data['@type'];
+          let type = data['@type'] === 'repository' ? 'repo' : data['@type'];
           let serializer = store.serializerFor(type);
           let modelClass = store.modelFor(type);
           let normalized = serializer.normalize(modelClass, data);
