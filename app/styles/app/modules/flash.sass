@@ -1,0 +1,47 @@
+.flash
+  @include resetul
+  text-align: center
+  height: 0
+  li
+    position: relative
+    width: 100%
+  li.notice, li.success, li.error
+    opacity: 0
+    animation: fadeFlashInOut 7s 1 ease
+    z-index: 90
+    height: 2.8rem
+
+  .close
+    position: absolute
+    top: .7em
+    right: 1em
+    cursor: pointer
+
+  .success,
+  .notice
+    color: $turf-green
+    background-color: $seed-green
+    +colorSVG($turf-green)
+  .error
+    color: $brick-red
+    background-color: $quartz-red
+    +colorSVG($brick-red)
+
+.flash-message
+  padding: .9em 0
+  margin: 0
+  line-height: 1
+  font-size: 1rem
+
+@keyframes fadeFlashInOut
+  2%
+    opacity: 1
+    transfrom: translateY(-50%)
+  5%
+    transform: translateY(0)
+  98%
+    transform: translateY(0)
+    opacity: 1
+  100%
+    transform: translateY(-50%)
+    opacity: 0
