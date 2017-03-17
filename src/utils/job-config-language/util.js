@@ -1,4 +1,4 @@
-import { languageConfigKeys } from 'travis/utils/keys-map';
+import { languageConfigKeys } from 'travis/src/utils/keys-map';
 
 export default function jobConfigLanguage(config) {
   var gemfile, key, languageName, output;

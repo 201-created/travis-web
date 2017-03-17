@@ -1,4 +1,4 @@
-import formatCommit from 'travis/utils/format-commit';
+import formatCommit from 'travis/src/utils/format-commit';
 import Ember from 'ember';
 
 export const helper = Ember.Helper.helper(function (params) {

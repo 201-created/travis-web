@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import eventually from 'travis/utils/eventually';
+import eventually from 'travis/src/utils/eventually';
 import Visibility from 'npm:visibilityjs';
 
 const { service, controller } = Ember.inject;

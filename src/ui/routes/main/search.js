@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import MainTabRoute from 'travis/routes/main-tab';
+import MainTabRoute from 'travis/src/ui/routes/main-tab';
 
 const { service } = Ember.inject;
 

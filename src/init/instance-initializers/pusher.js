@@ -1,5 +1,5 @@
 import config from 'travis/config/environment';
-import TravisPusher from 'travis/utils/pusher';
+import TravisPusher from 'travis/src/utils/pusher';
 var PusherInitializer, initialize;
 
 initialize = function (applicationInstance) {

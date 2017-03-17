@@ -1,4 +1,4 @@
-import SimpleLayoutRoute from 'travis/routes/simple-layout';
+import SimpleLayoutRoute from 'travis/src/ui/routes/simple-layout';
 
 export default SimpleLayoutRoute.extend({
   setupController(controller) {

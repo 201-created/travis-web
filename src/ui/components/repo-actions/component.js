@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import computed from 'ember-computed-decorators';
 
-import eventually from 'travis/utils/eventually';
+import eventually from 'travis/src/utils/eventually';
 
 import { task, taskGroup } from 'ember-concurrency';
 

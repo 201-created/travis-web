@@ -1,4 +1,4 @@
-import timeInWords from 'travis/utils/time-in-words';
+import timeInWords from 'travis/src/utils/time-in-words';
 import Ember from 'ember';
 
 export const helper = Ember.Helper.helper(function (params) {

@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import colorForState from 'travis/utils/color-for-state';
+import colorForState from 'travis/src/utils/color-for-state';
 
 const { service } = Ember.inject;
 

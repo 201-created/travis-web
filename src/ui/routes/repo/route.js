@@ -1,4 +1,4 @@
-import TravisRoute from 'travis/routes/basic';
+import TravisRoute from 'travis/src/ui/routes/basic';
 import Repo from 'travis/models/repo';
 import ScrollResetMixin from 'travis/mixins/scroll-reset';
 import Ember from 'ember';

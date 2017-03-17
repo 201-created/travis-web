@@ -1,4 +1,4 @@
-import eventually from 'travis/utils/eventually';
+import eventually from 'travis/src/utils/eventually';
 
 const { module, test } = QUnit;
 

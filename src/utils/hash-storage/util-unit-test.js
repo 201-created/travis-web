@@ -1,4 +1,4 @@
-import HashStorage from 'travis/utils/hash-storage';
+import HashStorage from 'travis/src/utils/hash-storage';
 
 const { module, test } = QUnit;
 

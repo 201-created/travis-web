@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import TravisRoute from 'travis/routes/basic';
+import TravisRoute from 'travis/src/ui/routes/basic';
 
 const { service } = Ember.inject;
 

@@ -1,4 +1,4 @@
-import ExpandableRecordArray from 'travis/utils/expandable-record-array';
+import ExpandableRecordArray from 'travis/src/utils/expandable-record-array';
 import Model from 'ember-data/model';
 import Ember from 'ember';
 import attr from 'ember-data/attr';

@@ -1,4 +1,4 @@
-import formatCommit from 'travis/utils/format-commit';
+import formatCommit from 'travis/src/utils/format-commit';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | format commit');

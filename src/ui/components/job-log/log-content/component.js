@@ -1,8 +1,8 @@
 /* global Travis */
 import Ember from 'ember';
-import LinesSelector from 'travis/utils/lines-selector';
-import Log from 'travis/utils/log';
-import LogFolder from 'travis/utils/log-folder';
+import LinesSelector from 'travis/src/utils/lines-selector';
+import Log from 'travis/src/utils/log';
+import LogFolder from 'travis/src/utils/log-folder';
 
 import config from 'travis/config/environment';
 

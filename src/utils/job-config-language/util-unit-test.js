@@ -1,4 +1,4 @@
-import jobConfigLanguage from 'travis/utils/job-config-language';
+import jobConfigLanguage from 'travis/src/utils/job-config-language';
 
 const { module, test } = QUnit;
 

@@ -1,6 +1,6 @@
 /* global _gaq */
 import Ember from 'ember';
-import config from './config/environment';
+import config from '../config/environment';
 
 var Router = Ember.Router.extend({
   // this is needed, because in the location
@@ -9,7 +9,8 @@ var Router = Ember.Router.extend({
   //
   // we should probably think about a more general way to
   // do this, location should not know about auth status
-  location: Ember.testing ? 'none' : 'auth-dependent',
+  // location: Ember.testing ? 'none' : 'auth-dependent',
+  location: 'none',
   rootURL: config.rootURL,
 
   generate() {

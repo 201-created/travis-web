@@ -1,4 +1,4 @@
-import formatSha from 'travis/utils/format-sha';
+import formatSha from 'travis/src/utils/format-sha';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | format sha');

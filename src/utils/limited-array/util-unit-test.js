@@ -1,4 +1,4 @@
-import LimitedArray from 'travis/utils/limited-array';
+import LimitedArray from 'travis/src/utils/limited-array';
 
 const { module, test } = QUnit;
 

@@ -1,7 +1,7 @@
 import Ember from 'ember';
-import colorForState from 'travis/utils/color-for-state';
-import FaviconManager from 'travis/utils/favicon-manager';
-import getFaviconUri from 'travis/utils/favicon-data-uris';
+import colorForState from 'travis/src/utils/color-for-state';
+import FaviconManager from 'travis/src/utils/favicon-manager';
+import getFaviconUri from 'travis/src/utils/favicon-data-uris';
 
 export default Ember.Mixin.create({
   actions: {

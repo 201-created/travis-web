@@ -1,5 +1,5 @@
 import _array from 'lodash/array';
-import configKeysMap from 'travis/utils/keys-map';
+import configKeysMap from 'travis/src/utils/keys-map';
 
 export default function safelistedConfigKeys(config) {
   if (!config) {

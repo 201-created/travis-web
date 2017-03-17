@@ -1,4 +1,4 @@
-import durationFrom from 'travis/utils/duration-from';
+import durationFrom from 'travis/src/utils/duration-from';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | duration from');

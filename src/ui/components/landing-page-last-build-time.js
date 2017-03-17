@@ -1,4 +1,4 @@
-import timeAgoInWords from 'travis/utils/time-ago-in-words';
+import timeAgoInWords from 'travis/src/utils/time-ago-in-words';
 import Ember from 'ember';
 
 export const helper = Ember.Helper.helper(function (params) {

@@ -1,4 +1,4 @@
-import timeInWords from 'travis/utils/time-in-words';
+import timeInWords from 'travis/src/utils/time-in-words';
 import { module, test } from 'qunit';
 
 module('Unit | Utility | time in words');

@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import computed from 'ember-computed-decorators';
-import durationFrom from 'travis/utils/duration-from';
+import durationFrom from 'travis/src/utils/duration-from';
 
 const { service } = Ember.inject;
 

@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import FaviconManager from 'travis/utils/favicon-manager';
+import FaviconManager from 'travis/src/utils/favicon-manager';
 
 var fakeHead, manager;
 

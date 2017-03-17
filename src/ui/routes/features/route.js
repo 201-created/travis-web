@@ -1,4 +1,4 @@
-import TravisRoute from 'travis/routes/basic';
+import TravisRoute from 'travis/src/ui/routes/basic';
 import Ember from 'ember';
 
 export default TravisRoute.extend({

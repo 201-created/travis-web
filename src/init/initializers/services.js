@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import Tailing from 'travis/utils/tailing';
-import ToTop from 'travis/utils/to-top';
+import Tailing from 'travis/src/utils/tailing';
+import ToTop from 'travis/src/utils/to-top';
 var Initializer, initialize;
 
 initialize = function (application) {

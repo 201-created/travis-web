@@ -1,5 +1,5 @@
 import StorageService from 'travis/services/storage';
-import Storage from 'travis/utils/hash-storage';
+import Storage from 'travis/src/utils/hash-storage';
 
 export default StorageService.extend({
   init() {
