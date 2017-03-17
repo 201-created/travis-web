@@ -33,6 +33,9 @@ module.exports = function () {
     'ember-cli-babel': {
       includePolyfill: true,
     },
+    vendorFiles: {
+      'ember-resolver.js': null
+    },
     babel: {
       optional: ['es7.decorators']
     },
