@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import limit from 'travis/src/utils/computed-limit';
+import limit from 'travis/src/utils/computed-limit/util';
 
 const { alias } = Ember.computed;
 

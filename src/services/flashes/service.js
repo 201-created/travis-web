@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import LimitedArray from 'travis/src/utils/limited-array';
+import LimitedArray from 'travis/src/utils/limited-array/util';
 
 const { service } = Ember.inject;
 const { alias } = Ember.computed;

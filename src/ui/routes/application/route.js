@@ -1,7 +1,7 @@
 /* global Travis */
 import TravisRoute from 'travis/src/ui/routes/basic';
 import config from 'travis/config/environment';
-import BuildFaviconMixin from 'travis/mixins/build-favicon';
+import BuildFaviconMixin from 'travis/src/utils/mixins/build-favicon';
 import Ember from 'ember';
 
 import KeyboardShortcuts from 'ember-keyboard-shortcuts/mixins/route';

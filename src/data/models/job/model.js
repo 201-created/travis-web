@@ -4,7 +4,7 @@ import _object from 'lodash/object';
 import Ember from 'ember';
 import Model from 'ember-data/model';
 import Log from 'travis/models/log';
-import DurationCalculations from 'travis/mixins/duration-calculations';
+import DurationCalculations from 'travis/src/utils/mixins/duration-calculations';
 import attr from 'ember-data/attr';
 import { belongsTo } from 'ember-data/relationships';
 import computed from 'ember-computed-decorators';

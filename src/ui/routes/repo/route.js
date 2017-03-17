@@ -1,6 +1,6 @@
 import TravisRoute from 'travis/src/ui/routes/basic';
 import Repo from 'travis/models/repo';
-import ScrollResetMixin from 'travis/mixins/scroll-reset';
+import ScrollResetMixin from 'travis/src/utils/mixins/scroll-reset';
 import Ember from 'ember';
 
 const { service } = Ember.inject;
