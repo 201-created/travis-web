@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import Polling from 'travis/services/polling';
+import Polling from 'travis/src/services/polling/service';
 import config from 'travis/config/environment';
 
 const { module, test } = QUnit;
