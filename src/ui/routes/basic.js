@@ -15,7 +15,7 @@ export default Ember.Route.extend({
 
   beforeModel(transition) {
     if (!this.signedIn()) {
-      this.auth.autoSignIn();
+      this.get('auth').autoSignIn();
     }
     if (!this.signedIn() && this.get('needsAuth')) {
       this.auth.set('afterSignInTransition', transition);

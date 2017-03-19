@@ -15,7 +15,7 @@ export default TravisRoute.extend(BuildFaviconMixin, KeyboardShortcuts, {
   needsAuth: false,
 
   renderTemplate: function () {
-    if (this.get('config').pro) {
+    if (this.get('config.pro')) {
       Ember.$('body').addClass('pro');
     }
     return this._super(...arguments);
